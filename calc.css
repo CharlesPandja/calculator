@@ -1,0 +1,133 @@
+/*calc.css */
+@import url('variables.css');
+
+
+body {
+    background-image: url('bgCalc.jpg');
+    font-family: Arial;
+
+}
+
+h1 {
+    color: var(--blanc);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.themeText {
+    background-color: var(--gris-clair);
+    padding: 10px 20px;
+    border-radius: 12px;
+    background-color: var(--noir);
+    color: var(--blanc);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.themeText:hover{
+    background-color: var(--gris-fonce);
+    color: var(--blanc);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.calcBtn {
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: repeat(5, 50px);
+    gap: 8px;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.btn1 {
+    background-color: var(--gris-clair);
+    border-radius: 50%;
+    border: currentColor;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.btn2 {
+    background-color: var(--gris-fonce);
+    color: var(--blanc);
+    border-radius: 50%;
+    border: currentColor;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.btn3 {
+    background-color: var(--orange);
+    border-radius: 50%;
+    border: currentColor;
+    font-size: 1.3rem;
+    color: var(--blanc);
+    cursor: pointer;
+}
+
+.calcScreen {
+    height: 5rem;
+    width: 100%;
+    color: var(--blanc);
+    position: relative;
+    border-bottom: var(--noir);
+}
+
+.calcText {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: var(--blanc);
+    font-size: 3rem;
+    margin-right: 25px;
+}
+
+.calcForm {
+    background-color: var(--noir);
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px !important;
+}
+
+#zero {
+    grid-column: 1/3;
+    border-radius: 20px;
+}
+
+.basicCalc {
+    text-align: center;
+    width: 100vw;
+}
+
+
+@media (max-width: 1024px) {
+    .calcForm {
+        width: 30vw;
+    }
+    .calcText{
+        margin-right: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .calcForm {
+        width: 30vw;
+    }
+
+    .calcBtn {
+        margin: 20px;
+    }
+}

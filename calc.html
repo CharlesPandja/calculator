@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+
+<body>
+    <section class="basicCalc">
+        <h1>Basic <span style='color: var(--orange)'>iPhone's</span> calculator </h1>
+        
+        <section class="container">
+            <div class="calcForm" id="calcForm">
+                <div class="calcScreen" id="calcScreen">
+                    <div class="calcText" id="calcText">0</div>
+                </div>
+                <div class="calcBtn">
+                    <button class="btn1" id="ac">AC</button>
+                    <button class="btn1" id="plusMoins">+/-</button>
+                    <button class="btn1" id="percent">%</button>
+                    <button class="btn3" id="division">/</button>
+                    <button class="btn2" id="seven" onclick=displayNumbers(7)>7</button>
+                    <button class="btn2" id="eight" onclick=displayNumbers(8)>8</button>
+                    <button class="btn2" id="nine" onclick=displayNumbers(9)>9</button>
+                    <button class="btn3" id="multiplication">X</button>
+                    <button class="btn2" id="four" onclick=displayNumbers(4)>4</button>
+                    <button class="btn2" id="five" onclick=displayNumbers(5)>5</button>
+                    <button class="btn2" id="six" onclick=displayNumbers(6)>6</button>
+                    <button class="btn3" id="minus">-</button>
+                    <button class="btn2" id="one" onclick=displayNumbers(1)>1</button>
+                    <button class="btn2" id="two" onclick=displayNumbers(2)>2</button>
+                    <button class="btn2" id="three" onclick=displayNumbers(3)>3</button>
+                    <button class="btn3" id="plus">+</button>
+                    <button class="btn2" id="zero" onclick=displayNumbers(0)>0</button>
+                    <button class="btn2" id="virgule">,</button>
+                    <button class="btn3" id="equality">=</button>
+                </div>
+            </div>
+        </section>
+        <a class="themeText" id="themeText">Light mode</a>
+    </section>
+    <script src="calc.js"></script>
+</body>
+
+</html>
